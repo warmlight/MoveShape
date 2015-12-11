@@ -7,7 +7,6 @@
 //
 
 #import "MoveShapeView.h"
-#import "CircleView.h"
 
 #define count 4
 
@@ -27,7 +26,7 @@
     if (self) {
         self.viewWidth = self.frame.size.width / count;
         self.viewHeight = self.frame.size.height;
-        [self defaultValue];
+        [self colorValue];
         [self creatFirstCircleView:[UIColor lightGrayColor]];
         [self hierarchyView];
         [self createTopButtons];
@@ -35,7 +34,7 @@
     return self;
 }
 
-- (void)defaultValue {
+- (void)colorValue {
     self.colorArray = [[NSMutableArray alloc] init];
     for (int i = 0; i < count; i ++) {
         UIColor *color = [self randomColor];
@@ -43,26 +42,24 @@
     }
 }
 
-- (CGRect)createFrame:(NSInteger)index {
-    return CGRectMake(index * self.viewWidth, 0, self.viewWidth, self.viewHeight);
-}
-
 - (CGRect)createCircleFrame :(NSInteger)index {
-    return CGRectMake(index * self.viewHeight + index * (self.viewWidth - self.viewHeight), 0, self.viewHeight, self.viewHeight);
-
+    return CGRectMake((self.viewWidth - self.viewHeight) / 2 + index * (self.viewWidth - self.viewHeight) + index * self.viewHeight, 0, self.viewHeight, self.viewHeight);
 }
 
 - (void)creatFirstCircleView:(UIColor *)color{
     for (int i = 0; i < count ; i ++) {
-        CGRect frame = [self createFrame:i];
-        CircleView *view = [[CircleView alloc] initWithFrame:frame];
-        view.circleLayer.backgroundColor = color.CGColor;
+        CGRect frame = [self createCircleFrame:i];
+        UIColor *color = [UIColor lightGrayColor];
+        UIView *view = [[UIView alloc] initWithFrame:frame];
+        view.layer.cornerRadius = self.viewHeight / 2;
+        view.layer.backgroundColor = color.CGColor;
         [self addSubview:view];
+
     }
 }
 
 - (void)hierarchyView {
-    CGRect firstFrame = CGRectMake((self.viewWidth - self.viewHeight) / 2, 0, self.viewHeight, self.viewHeight);
+    CGRect firstFrame = [self createCircleFrame:0];
     self.firstView = [[UIView alloc] initWithFrame:firstFrame];
     self.firstView.layer.cornerRadius = self.viewHeight / 2;
     self.firstView.backgroundColor = [UIColor lightGrayColor];
@@ -86,7 +83,7 @@
  */
 - (void) createTopButtons {
     for (int i = 0; i < count; i ++) {
-        CGRect tempFrame = [self createFrame:i];
+        CGRect tempFrame = CGRectMake(i * self.viewWidth, 0, self.viewWidth, self.viewHeight);
         UIButton *tempButton = [[UIButton alloc] initWithFrame:tempFrame];
         tempButton.tag = i;
         [tempButton addTarget:self action:@selector(tapButton:) forControlEvents:UIControlEventTouchUpInside];
@@ -101,7 +98,7 @@
  */
 - (void)tapButton:(UIButton *) sender {
 
-    CGRect frame = CGRectMake((self.viewWidth - self.viewHeight) / 2 + self.viewHeight * sender.tag + sender.tag * (self.viewWidth - self.viewHeight), 0, self.viewHeight, self.viewHeight);
+    CGRect frame = [self createCircleFrame:sender.tag];
     CGRect changeFrame = CGRectMake(-sender.tag * self.viewHeight + -sender.tag * (self.viewWidth - self.viewHeight), 0, self.viewHeight, self.viewHeight);
     
     [UIView animateWithDuration:2 animations:^{

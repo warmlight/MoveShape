@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#define diameter 50
 
 @interface MoveShapeView : UIView
 

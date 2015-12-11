@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "AC0105FB4CE87F4FACEAC4EC8D9DA5C3046CBC28",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AC0105FB4CE87F4FACEAC4EC8D9DA5C3046CBC28" : 0,
+    "6F4E3EA1DF85AA3D53BF1D1420E6A383095B43F9" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EAF6CE96-3AC5-47C9-8C3D-D7170F2D1AF7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AC0105FB4CE87F4FACEAC4EC8D9DA5C3046CBC28" : "MoveShade\/",
+    "6F4E3EA1DF85AA3D53BF1D1420E6A383095B43F9" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MoveShade",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MoveShade.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:warmlight\/UIPopoverPresentationController_DEMO.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6F4E3EA1DF85AA3D53BF1D1420E6A383095B43F9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:warmlight\/MoveShape.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AC0105FB4CE87F4FACEAC4EC8D9DA5C3046CBC28"
+    }
+  ]
+}

@@ -15,7 +15,6 @@
 		CD9163B81C1922D700CAE72C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9163B61C1922D700CAE72C /* LaunchScreen.storyboard */; };
 		CD9163C31C1922D700CAE72C /* MoveShadeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9163C21C1922D700CAE72C /* MoveShadeTests.m */; };
 		CD9163CE1C1922D700CAE72C /* MoveShadeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9163CD1C1922D700CAE72C /* MoveShadeUITests.m */; };
-		CD9163DD1C19231600CAE72C /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9163DC1C19231600CAE72C /* CircleView.m */; };
 		CD9163EA1C1948B100CAE72C /* MoveShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9163E91C1948B100CAE72C /* MoveShapeView.m */; };
 /* End PBXBuildFile section */
 
@@ -53,8 +52,6 @@
 		CD9163C91C1922D700CAE72C /* MoveShadeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoveShadeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD9163CD1C1922D700CAE72C /* MoveShadeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoveShadeUITests.m; sourceTree = "<group>"; };
 		CD9163CF1C1922D700CAE72C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD9163DB1C19231600CAE72C /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
-		CD9163DC1C19231600CAE72C /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
 		CD9163E81C1948B100CAE72C /* MoveShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveShapeView.h; sourceTree = "<group>"; };
 		CD9163E91C1948B100CAE72C /* MoveShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveShapeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,8 +113,6 @@
 				CD9163B61C1922D700CAE72C /* LaunchScreen.storyboard */,
 				CD9163B91C1922D700CAE72C /* Info.plist */,
 				CD9163A81C1922D700CAE72C /* Supporting Files */,
-				CD9163DB1C19231600CAE72C /* CircleView.h */,
-				CD9163DC1C19231600CAE72C /* CircleView.m */,
 				CD9163E81C1948B100CAE72C /* MoveShapeView.h */,
 				CD9163E91C1948B100CAE72C /* MoveShapeView.m */,
 			);
@@ -281,7 +276,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD9163EA1C1948B100CAE72C /* MoveShapeView.m in Sources */,
-				CD9163DD1C19231600CAE72C /* CircleView.m in Sources */,
 				CD9163B01C1922D700CAE72C /* ViewController.m in Sources */,
 				CD9163AD1C1922D700CAE72C /* AppDelegate.m in Sources */,
 				CD9163AA1C1922D700CAE72C /* main.m in Sources */,
@@ -508,6 +502,7 @@
 				CD9163D41C1922D700CAE72C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD9163D51C1922D700CAE72C /* Build configuration list for PBXNativeTarget "MoveShadeTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +511,7 @@
 				CD9163D71C1922D700CAE72C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD9163D81C1922D700CAE72C /* Build configuration list for PBXNativeTarget "MoveShadeUITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +520,7 @@
 				CD9163DA1C1922D700CAE72C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
