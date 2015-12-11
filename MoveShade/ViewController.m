@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "CircleView.h"
+#import "MoveShapeView.h"
 
 @interface ViewController ()
 
@@ -16,6 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    MoveShapeView *shapeView = [[MoveShapeView alloc] initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, diameter)];
+    [self.view addSubview:shapeView];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#define diameter 50
+
+@interface CircleLayer : CALayer
+
+@end
 
 @interface CircleView : UIView
-
+@property (strong, nonatomic) CircleLayer *circleLayer;
 @end
