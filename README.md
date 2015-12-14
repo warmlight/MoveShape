@@ -23,7 +23,7 @@
 ####关于相对位置
 　　在一开始，相对位置是这样的。第三层的frame是`(0, 0, self.frame.size.width, self.frame.size.height)];`
 ![层次关系](http://ac-3xs828an.clouddn.com/2b213ee2dfecbeba.png)  
-	点击第二个按钮后，我们要改变两者的位置关系如下，第三层这时的frame就是`(- self.viewWidth, 0, self.viewHeight, self.viewHeight);
+　　点击第二个按钮后，我们要改变两者的位置关系如下，第三层这时的frame就是`(- self.viewWidth, 0, self.viewHeight, self.viewHeight);
 `，可见`orgin.x`改变了，是一个负值，通过这种改变，可以造成一种第二层view在第三层保持不动的情况下左右移动的错觉。
 
 ![位置关系](http://ac-3xs828an.clouddn.com/dd84f44291cb386d.png)
